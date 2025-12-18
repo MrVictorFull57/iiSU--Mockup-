@@ -27,6 +27,7 @@ by:   	MrFull57
 			<CorLetrasTitulos>403a46</CorLetrasTitulos>
 			<FundoOpacidade>0.24</FundoOpacidade>
 			<FundoSaturacao>1</FundoSaturacao>
+			<MostrarArteFundo>true</MostrarArteFundo>
 			<CorMiniFundo>ffffff</CorMiniFundo>
 			<CorHelpFundo>ffffffcc</CorHelpFundo>
 			<CorHelpFundo2>d1cddacc</CorHelpFundo2>
@@ -35,7 +36,26 @@ by:   	MrFull57
 			<ItemForaOpacidade>0.7</ItemForaOpacidade>
 			<ItemForaTonalidade>0.97</ItemForaTonalidade>
 		</variables>
-    </colorScheme>
+	</colorScheme>
+	<colorScheme name="light-clean">
+		<variables>
+			<CorFundoTopo>f4f4f4</CorFundoTopo>
+			<CorFundoRodape>ececec</CorFundoRodape>
+			<CorFundoBolinhas>ffffff</CorFundoBolinhas>
+			<CorLetrasGeral>403a46</CorLetrasGeral>
+			<CorLetrasTitulos>403a46</CorLetrasTitulos>
+			<FundoOpacidade>0.24</FundoOpacidade>
+			<FundoSaturacao>1</FundoSaturacao>
+			<MostrarArteFundo>false</MostrarArteFundo>
+			<CorMiniFundo>ffffff</CorMiniFundo>
+			<CorHelpFundo>ffffffcc</CorHelpFundo>
+			<CorHelpFundo2>d1cddacc</CorHelpFundo2>
+			<CorDeFato>light</CorDeFato>
+			<ImagemSeletor>./_inc/images/grid-seletor-light.png</ImagemSeletor>
+			<ItemForaOpacidade>0.7</ItemForaOpacidade>
+			<ItemForaTonalidade>0.97</ItemForaTonalidade>
+		</variables>
+	</colorScheme>
 	<colorScheme name="dark">
 		<variables>
 			<CorFundoTopo>262626</CorFundoTopo>
@@ -45,6 +65,7 @@ by:   	MrFull57
 			<CorLetrasTitulos>e0e0e0</CorLetrasTitulos>
 			<FundoOpacidade>0.12</FundoOpacidade>
 			<FundoSaturacao>1</FundoSaturacao>
+			<MostrarArteFundo>true</MostrarArteFundo>
 			<CorMiniFundo>e0e0e0</CorMiniFundo>
 			<CorHelpFundo>ffffff44</CorHelpFundo>
 			<CorHelpFundo2>d1cdda44</CorHelpFundo2>
@@ -53,7 +74,26 @@ by:   	MrFull57
 			<ItemForaOpacidade>0.97</ItemForaOpacidade>
 			<ItemForaTonalidade>0.7</ItemForaTonalidade>
 		</variables>
-    </colorScheme>
+	</colorScheme>
+	<colorScheme name="dark-clean">
+		<variables>
+			<CorFundoTopo>262626</CorFundoTopo>
+			<CorFundoRodape>161616</CorFundoRodape>
+			<CorFundoBolinhas>3c3c3c</CorFundoBolinhas>
+			<CorLetrasGeral>403a46</CorLetrasGeral>
+			<CorLetrasTitulos>e0e0e0</CorLetrasTitulos>
+			<FundoOpacidade>0.12</FundoOpacidade>
+			<FundoSaturacao>1</FundoSaturacao>
+			<MostrarArteFundo>false</MostrarArteFundo>
+			<CorMiniFundo>e0e0e0</CorMiniFundo>
+			<CorHelpFundo>ffffff44</CorHelpFundo>
+			<CorHelpFundo2>d1cdda44</CorHelpFundo2>
+			<CorDeFato>dark</CorDeFato>
+			<ImagemSeletor>./_inc/images/grid-seletor-dark.png</ImagemSeletor>
+			<ItemForaOpacidade>0.97</ItemForaOpacidade>
+			<ItemForaTonalidade>0.7</ItemForaTonalidade>
+		</variables>
+	</colorScheme>
 	<colorScheme name="blue">
 		<variables>
 			<CorFundoTopo>1c2c68</CorFundoTopo>
@@ -63,6 +103,7 @@ by:   	MrFull57
 			<CorLetrasTitulos>f0eff1</CorLetrasTitulos>
 			<FundoOpacidade>0.15</FundoOpacidade>
 			<FundoSaturacao>0.5</FundoSaturacao>
+			<MostrarArteFundo>true</MostrarArteFundo>
 			<CorMiniFundo>f0eff1</CorMiniFundo>
 			<CorHelpFundo>ffffff44</CorHelpFundo>
 			<CorHelpFundo2>d1cdda44</CorHelpFundo2>
@@ -71,7 +112,26 @@ by:   	MrFull57
 			<ItemForaOpacidade>0.97</ItemForaOpacidade>
 			<ItemForaTonalidade>0.7</ItemForaTonalidade>
 		</variables>
-    </colorScheme>
+	</colorScheme>
+	<colorScheme name="blue-clean">
+		<variables>
+			<CorFundoTopo>1c2c68</CorFundoTopo>
+			<CorFundoRodape>121258</CorFundoRodape>
+			<CorFundoBolinhas>233688</CorFundoBolinhas>
+			<CorLetrasGeral>5c5a91</CorLetrasGeral>
+			<CorLetrasTitulos>f0eff1</CorLetrasTitulos>
+			<FundoOpacidade>0.15</FundoOpacidade>
+			<FundoSaturacao>0.5</FundoSaturacao>
+			<MostrarArteFundo>false</MostrarArteFundo>
+			<CorMiniFundo>f0eff1</CorMiniFundo>
+			<CorHelpFundo>ffffff44</CorHelpFundo>
+			<CorHelpFundo2>d1cdda44</CorHelpFundo2>
+			<CorDeFato>blue</CorDeFato>
+			<ImagemSeletor>./_inc/images/grid-seletor-dark.png</ImagemSeletor>
+			<ItemForaOpacidade>0.97</ItemForaOpacidade>
+			<ItemForaTonalidade>0.7</ItemForaTonalidade>
+		</variables>
+	</colorScheme>
 	<colorScheme name="green">
 		<variables>
 			<CorFundoTopo>1b5e20</CorFundoTopo>
@@ -81,6 +141,7 @@ by:   	MrFull57
 			<CorLetrasTitulos>e8f5e9</CorLetrasTitulos>
 			<FundoOpacidade>0.15</FundoOpacidade>
 			<FundoSaturacao>0.6</FundoSaturacao>
+			<MostrarArteFundo>true</MostrarArteFundo>
 			<CorMiniFundo>e8f5e9</CorMiniFundo>
 			<CorHelpFundo>ffffff44</CorHelpFundo>
 			<CorHelpFundo2>d1cdda44</CorHelpFundo2>
@@ -89,7 +150,26 @@ by:   	MrFull57
 			<ItemForaOpacidade>0.97</ItemForaOpacidade>
 			<ItemForaTonalidade>0.7</ItemForaTonalidade>
 		</variables>
-    </colorScheme>
+	</colorScheme>
+	<colorScheme name="green-clean">
+		<variables>
+			<CorFundoTopo>1b5e20</CorFundoTopo>
+			<CorFundoRodape>0d3b13</CorFundoRodape>
+			<CorFundoBolinhas>2e7d32</CorFundoBolinhas>
+			<CorLetrasGeral>6d8f6d</CorLetrasGeral>
+			<CorLetrasTitulos>e8f5e9</CorLetrasTitulos>
+			<FundoOpacidade>0.15</FundoOpacidade>
+			<FundoSaturacao>0.6</FundoSaturacao>
+			<MostrarArteFundo>false</MostrarArteFundo>
+			<CorMiniFundo>e8f5e9</CorMiniFundo>
+			<CorHelpFundo>ffffff44</CorHelpFundo>
+			<CorHelpFundo2>d1cdda44</CorHelpFundo2>
+			<CorDeFato>green</CorDeFato>
+			<ImagemSeletor>./_inc/images/grid-seletor-dark.png</ImagemSeletor>
+			<ItemForaOpacidade>0.97</ItemForaOpacidade>
+			<ItemForaTonalidade>0.7</ItemForaTonalidade>
+		</variables>
+	</colorScheme>
 	<colorScheme name="teal">
 		<variables>
 			<CorFundoTopo>00695c</CorFundoTopo>
@@ -99,6 +179,7 @@ by:   	MrFull57
 			<CorLetrasTitulos>e0f2f1</CorLetrasTitulos>
 			<FundoOpacidade>0.15</FundoOpacidade>
 			<FundoSaturacao>0.55</FundoSaturacao>
+			<MostrarArteFundo>true</MostrarArteFundo>
 			<CorMiniFundo>e0f2f1</CorMiniFundo>
 			<CorHelpFundo>ffffff44</CorHelpFundo>
 			<CorHelpFundo2>d1cdda44</CorHelpFundo2>
@@ -107,7 +188,26 @@ by:   	MrFull57
 			<ItemForaOpacidade>0.97</ItemForaOpacidade>
 			<ItemForaTonalidade>0.7</ItemForaTonalidade>
 		</variables>
-    </colorScheme>
+	</colorScheme>
+	<colorScheme name="teal-clean">
+		<variables>
+			<CorFundoTopo>00695c</CorFundoTopo>
+			<CorFundoRodape>004d40</CorFundoRodape>
+			<CorFundoBolinhas>00796b</CorFundoBolinhas>
+			<CorLetrasGeral>5e8f88</CorLetrasGeral>
+			<CorLetrasTitulos>e0f2f1</CorLetrasTitulos>
+			<FundoOpacidade>0.15</FundoOpacidade>
+			<FundoSaturacao>0.55</FundoSaturacao>
+			<MostrarArteFundo>false</MostrarArteFundo>
+			<CorMiniFundo>e0f2f1</CorMiniFundo>
+			<CorHelpFundo>ffffff44</CorHelpFundo>
+			<CorHelpFundo2>d1cdda44</CorHelpFundo2>
+			<CorDeFato>teal</CorDeFato>
+			<ImagemSeletor>./_inc/images/grid-seletor-dark.png</ImagemSeletor>
+			<ItemForaOpacidade>0.97</ItemForaOpacidade>
+			<ItemForaTonalidade>0.7</ItemForaTonalidade>
+		</variables>
+	</colorScheme>
 
 	<!--///	Todas as Views ///-->
 	<view name="system,gamelist">
@@ -360,6 +460,7 @@ by:   	MrFull57
 			<scrollFadeIn>true</scrollFadeIn>
 			<opacity>${FundoOpacidade}</opacity>
 			<saturation>${FundoSaturacao}</saturation>
+			<visible>${MostrarArteFundo}</visible>
 		</image>
 
 		<image name="system-icon">
