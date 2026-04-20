@@ -1,6 +1,6 @@
 <!--
-name: 	iiSU Interpreted
-by:   	MrFull57
+name:	iiSU Interpreted
+by:		MrFull57
 -->
 
 <theme>
@@ -17,7 +17,7 @@ by:   	MrFull57
 		<fallbackGame>./_inc/systems/artwork/_default_game.webp</fallbackGame>
 	</variables>
 
-	<!--///	Esquemas de Cores ///-->
+	<!--/// Esquemas de Cores ///-->
 	<colorScheme name="light">
 		<variables>
 			<CorFundoTopo>f4f4f4</CorFundoTopo>
@@ -53,7 +53,7 @@ by:   	MrFull57
 			<ItemForaOpacidade>0.97</ItemForaOpacidade>
 			<ItemForaTonalidade>0.7</ItemForaTonalidade>
 		</variables>
-    </colorScheme>
+	</colorScheme>
 	<colorScheme name="blue">
 		<variables>
 			<CorFundoTopo>1c2c68</CorFundoTopo>
@@ -71,7 +71,7 @@ by:   	MrFull57
 			<ItemForaOpacidade>0.97</ItemForaOpacidade>
 			<ItemForaTonalidade>0.7</ItemForaTonalidade>
 		</variables>
-    </colorScheme>
+	</colorScheme>
 	<colorScheme name="green">
 		<variables>
 			<CorFundoTopo>1b5e20</CorFundoTopo>
@@ -89,7 +89,7 @@ by:   	MrFull57
 			<ItemForaOpacidade>0.97</ItemForaOpacidade>
 			<ItemForaTonalidade>0.7</ItemForaTonalidade>
 		</variables>
-    </colorScheme>
+	</colorScheme>
 	<colorScheme name="teal">
 		<variables>
 			<CorFundoTopo>00695c</CorFundoTopo>
@@ -107,9 +107,9 @@ by:   	MrFull57
 			<ItemForaOpacidade>0.97</ItemForaOpacidade>
 			<ItemForaTonalidade>0.7</ItemForaTonalidade>
 		</variables>
-    </colorScheme>
+	</colorScheme>
 
-	<!--///	Todas as Views ///-->
+	<!--/// Todas as Views ///-->
 	<view name="system,gamelist">
 		<image name="system-background">
 			<origin>0 0</origin>
@@ -121,6 +121,15 @@ by:   	MrFull57
 			<colorEnd>${CorFundoRodape}</colorEnd>
 			<gradientType>vertical</gradientType>
 			<zIndex>1</zIndex>
+		</image>
+		<image name="system-background-bolinhas">
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<path>./_inc/images/fundo_bolinhas.png</path>
+			<tile>true</tile>
+			<color>${CorFundoBolinhas}</color>
+			<zIndex>2</zIndex>
 		</image>
 		<image name="reloginho">
 			<origin>1 0</origin>
@@ -230,15 +239,6 @@ by:   	MrFull57
 
 	<!--/// System View ///-->
 	<view name="system">
-		<image name="system-background-bolinhas">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<size>1 1</size>
-			<path>./_inc/images/fundo_bolinhas.png</path>
-			<tile>true</tile>
-			<color>${CorFundoBolinhas}</color>
-			<zIndex>2</zIndex>
-		</image>
 		<carousel name="system-carousel">
 			<origin>0.5 0.5</origin>
 			<size>0.7 1</size>
@@ -278,7 +278,7 @@ by:   	MrFull57
 		</text>
 		<text name="system-nome,system-nome-sombra">
 			<text>${system.fullName.noCollections}</text>
-            <letterCase>none</letterCase>
+			<letterCase>none</letterCase>
 		</text>
 		<text name="system-nome">
 			<color>${CorLetrasTitulos}</color>
@@ -289,7 +289,7 @@ by:   	MrFull57
 		</text>
 		<text name="auto-nome,auto-nome-sombra">
 			<text>${system.fullName.autoCollections}</text>
-            <letterCase>capitalize</letterCase>
+			<letterCase>capitalize</letterCase>
 		</text>
 		<text name="auto-nome">
 			<color>${CorLetrasTitulos}</color>
@@ -300,7 +300,7 @@ by:   	MrFull57
 		</text>
 		<text name="custom-nome,custom-nome-sombra">
 			<text>${system.fullName.customCollections}</text>
-            <letterCase>none</letterCase>
+			<letterCase>none</letterCase>
 		</text>
 		<text name="custom-nome">
 			<color>${CorLetrasTitulos}</color>
@@ -348,20 +348,9 @@ by:   	MrFull57
 			<entries>a</entries>
 		</helpsystem>
 	</view>
-   
-	<!--///	Gamelist View: Carousel	///-->
-	<view name="gamelist">
-		<image name="background-art">
-			<origin>0 0</origin>
-			<pos>0 0</pos>
-			<cropSize>1 1</cropSize>
-			<imageType>fanart, screenshot</imageType>
-			<zIndex>2</zIndex>
-			<scrollFadeIn>true</scrollFadeIn>
-			<opacity>${FundoOpacidade}</opacity>
-			<saturation>${FundoSaturacao}</saturation>
-		</image>
 
+	<!--/// Gamelist View Base ///-->
+	<view name="gamelist">
 		<image name="system-icon">
 			<path>${artworkFolder}</path>
 			<default>${fallbackSystem}</default>
@@ -375,14 +364,13 @@ by:   	MrFull57
 			<color>00000033</color>
 			<zIndex>4</zIndex>
 		</image>
-		<text name="carousel-name,carousel-name-sombra">
+		<text name="carousel-name,carousel-name-custom,carousel-name-sombra,carousel-name-custom-sombra">
 			<lineSpacing>1.1</lineSpacing>
 			<verticalAlignment>center</verticalAlignment>
 			<fontPath>${fontMedium}</fontPath>
 			<metadata>name</metadata>
 		</text>
-		
-		<text name="carousel-name-sombra">
+		<text name="carousel-name-sombra,carousel-name-custom-sombra">
 			<color>00000033</color>
 			<zIndex>5</zIndex>
 		</text>
@@ -481,7 +469,6 @@ by:   	MrFull57
 		<helpsystem name="help-direito">
 			<entries>start,back,x,y,a</entries>
 		</helpsystem>
-		
 		<text name="custom-titulo">
 			<fontPath>${fontMedium}</fontPath>
 			<fontSize>0.02</fontSize>
@@ -490,7 +477,8 @@ by:   	MrFull57
 		</text>
 	</view>
 
-	<variant name="gamelist-carousel-default,gamelist-carousel-noicons,gamelist-carousel-noclock,gamelist-carousel-neither">
+	<!--/// Gamelist View: Carousel variants ///-->
+	<variant name="carousel, carousel-nocontrollers, carousel-noclock, carousel-notray, carousel-nocontrollers-noclock, carousel-nocontrollers-notray">
 		<view name="gamelist">
 			<carousel name="game-carousel">
 				<origin>0.5 0.5</origin>
@@ -519,12 +507,13 @@ by:   	MrFull57
 			</text>
 		</view>
 	</variant>
-	
-	<variant name="grid,grid-neither">
+
+	<!--/// Gamelist View: Grid variants ///-->
+	<variant name="grid, grid-nocontrollers, grid-noclock, grid-notray, grid-nocontrollers-noclock, grid-nocontrollers-notray">
 		<view name="gamelist">
 			<grid name="game-grid">
 				<origin>0 0</origin>
-				<imageRelativeScale>0.9</imageRelativeScale>				
+				<imageRelativeScale>0.9</imageRelativeScale>
 				<imageType>cover</imageType>
 				<defaultImage>${fallbackGame}</defaultImage>
 				<defaultFolderImage>${fallbackSystem}</defaultFolderImage>
@@ -548,20 +537,17 @@ by:   	MrFull57
 			</text>
 		</view>
 	</variant>
-	
-	<variant name="gamelist-carousel-default,grid">
-		
-	</variant>
 
-	<variant name="gamelist-carousel-noicons">
+	<!--/// Removal Logics for specific variants ///-->
+	<variant name="carousel-nocontrollers, carousel-nocontrollers-noclock, carousel-nocontrollers-notray, grid-nocontrollers, grid-nocontrollers-noclock, grid-nocontrollers-notray">
 		<view name="system">
 			<image name="system-console">
 				<visible>false</visible>
 			</image>
 		</view>
 	</variant>
-	
-	<variant name="gamelist-carousel-noclock">
+
+	<variant name="carousel-noclock, carousel-nocontrollers-noclock, grid-noclock, grid-nocontrollers-noclock">
 		<view name="system,gamelist">
 			<image name="reloginho">
 				<path>./_inc/images/${CorDeFato}/sem-reloginho.png</path>
@@ -571,8 +557,8 @@ by:   	MrFull57
 			</clock>
 		</view>
 	</variant>
-	
-	<variant name="gamelist-carousel-neither,grid-neither">	
+
+	<variant name="carousel-notray, carousel-nocontrollers-notray, grid-notray, grid-nocontrollers-notray">
 		<view name="system,gamelist">
 			<image name="reloginho">
 				<visible>false</visible>
@@ -584,14 +570,9 @@ by:   	MrFull57
 				<scope>none</scope>
 			</systemstatus>
 		</view>
-		<view name="system">
-			<image name="system-console">
-				<visible>false</visible>
-			</image>
-		</view>	
 	</variant>
 
-	<!--///	Idiomas ///-->
+	<!--/// Idiomas ///-->
 	<language name="en_US">
 		<variables>
 			<langLabelTotalGames>Total Games:</langLabelTotalGames>
@@ -599,7 +580,7 @@ by:   	MrFull57
 	</language>
 	<language name="ca_ES">
 		<variables>
-			<langLabelTotalGames>Total de Juegos:</langLabelTotalGames>
+			<langLabelTotalGames>Total de juegos:</langLabelTotalGames>
 		</variables>
 	</language>
 	<language name="de_DE">
@@ -698,26 +679,26 @@ by:   	MrFull57
 		</variables>
 	</language>
 
-	<!--///	Aspect Ratios ///-->
+	<!--/// Aspect Ratios ///-->
 	<aspectRatio name="16:9">
 		<include>./aspect-ratio-16-9.xml</include>
 	</aspectRatio>
 	<aspectRatio name="16:10">
 		<include>./aspect-ratio-16-10.xml</include>
-    </aspectRatio>
+	</aspectRatio>
 	<aspectRatio name="4:3">
 		<include>./aspect-ratio-4-3.xml</include>
-    </aspectRatio>
+	</aspectRatio>
 	<aspectRatio name="21:9">
 		<include>./aspect-ratio-21-9.xml</include>
-    </aspectRatio>
+	</aspectRatio>
 	<aspectRatio name="19.5:9">
 		<include>./aspect-ratio-19_5-9.xml</include>
-    </aspectRatio>
+	</aspectRatio>
 	<aspectRatio name="8:7">
 		<include>./aspect-ratio-8-7.xml</include>
-    </aspectRatio>
-	
+	</aspectRatio>
+
 	<view name="all">
 		<sound name="systembrowse">
 			<path>./_inc/sounds/systembrowse.wav</path>

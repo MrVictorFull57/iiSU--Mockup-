@@ -67,7 +67,7 @@
 			<pos>0.39 0.5</pos>
 		</text>
 	</view>
-	<variant name="gamelist-carousel-default,gamelist-carousel-noicons,gamelist-carousel-noclock,gamelist-carousel-neither">
+	<variant name="carousel, carousel-nocontrollers, carousel-noclock, carousel-notray, carousel-nocontrollers-noclock, carousel-nocontrollers-notray">
 		<view name="gamelist">
 			<carousel name="game-carousel">
 				<pos>0.1925 0.5</pos>
@@ -136,7 +136,7 @@
 			</text>
 		</view>
 	</variant>
-	<variant name="grid,grid-neither">
+	<variant name="grid, grid-nocontrollers, grid-noclock, grid-notray, grid-nocontrollers-noclock, grid-nocontrollers-notray">
 		<view name="gamelist">
 			<grid name="game-grid">
 				<pos>0.0125 0.15</pos>

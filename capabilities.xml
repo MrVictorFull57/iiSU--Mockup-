@@ -1,5 +1,5 @@
 <themeCapabilities>
-   
+
 	<themeName>iiSU Interpreted</themeName>
 
 	<language>en_US</language>
@@ -24,8 +24,7 @@
 	<language>zh_CN</language>
 	<language>zh_TW</language>
 
-
-	<!--///	Aspect Ratios ///-->
+	<!--/// Aspect Ratios ///-->
 	<aspectRatio>16:9</aspectRatio>
 	<aspectRatio>16:10</aspectRatio>
 	<aspectRatio>4:3</aspectRatio>
@@ -49,232 +48,415 @@
 		<entry>builtin-slide</entry>
 		<entry>builtin-fade</entry>
 	</suppressTransitionProfiles>
-   
 	<!--/// Variantes ///-->
-	<variant name="gamelist-carousel-default">
-		<label language="en_US">Default</label>
-		<label language="en_GB">Default</label>
-		<label language="bs_BA">Zadano</label>
-        <label language="ca_ES">Per Defecte</label>
-        <label language="de_DE">Standard</label>
-        <label language="es_ES">Por Defecto</label>
-        <label language="fr_FR">Défaut</label>
-		<label language="hr_HR">Zadano</label>
-        <label language="it_IT">Predefinita</label>
-        <label language="nl_NL">Standaard</label>
-        <label language="pl_PL">Domyślny</label>
-        <label language="pt_BR">Padrão</label>
-		<label language="pt_PT">Predefinido</label>
-        <label language="ro_RO">Implicit</label>
-        <label language="ru_RU">По Умолчанию</label>
-		<label language="sr_RS">Подразумевано</label>
-        <label language="sv_SE">Standard</label>
-        <label language="ja_JP">デフォルト</label>
-        <label language="ko_KR">기본</label>
-        <label language="zh_CN">默认</label>
-        <label language="zh_TW">預設</label>
+	<variant name="carousel">
+		<label language="en_US">Carousel</label>
+		<label language="en_GB">Carousel</label>
+		<label language="bs_BA">Vrteška</label>
+		<label language="ca_ES">Carrusel</label>
+		<label language="de_DE">Karussell</label>
+		<label language="es_ES">Carrusel</label>
+		<label language="fr_FR">Carrousel</label>
+		<label language="hr_HR">Vrteška</label>
+		<label language="it_IT">Carosello</label>
+		<label language="nl_NL">Carrousel</label>
+		<label language="pl_PL">Karuzela</label>
+		<label language="pt_BR">Carrossel</label>
+		<label language="pt_PT">Carrossel</label>
+		<label language="ro_RO">Carusel</label>
+		<label language="ru_RU">Карусель</label>
+		<label language="sr_RS">Вртешка</label>
+		<label language="sv_SE">Karusell</label>
+		<label language="ja_JP">カルーセル</label>
+		<label language="ko_KR">회전식</label>
+		<label language="zh_CN">轮播</label>
+		<label language="zh_TW">輪播</label>
 		<selectable>true</selectable>
 	</variant>
-	<variant name="gamelist-carousel-noicons">
-		<label language="en_US">Without Controller Icons</label>
-		<label language="en_GB">Without Controller Icons</label>
-		<label language="bs_BA">Bez Ikona Kontrolera</label>
-        <label language="ca_ES">Sense Icones De Controlador</label>
-        <label language="de_DE">Ohne Controller-Symbole</label>
-        <label language="es_ES">Sin Iconos De Controlador</label>
-        <label language="fr_FR">Sans Icônes De Contrôleur</label>
-		<label language="hr_HR">Bez Ikona Kontrolera</label>
-        <label language="it_IT">Senza Icone Del Controller</label>
-        <label language="nl_NL">Zonder Controllerpictogrammen</label>
-        <label language="pl_PL">Bez Ikon Kontrolera</label>
-        <label language="pt_BR">Sem Ícones Dos Controles</label>
-		<label language="pt_PT">Sem Ícones De Controlo</label>
-        <label language="ro_RO">Bizo Ikone E Kontroloreske</label>
-        <label language="ru_RU">Без Значков Контроллера</label>
-		<label language="sr_RS">Без Икона Контролера</label>
-        <label language="sv_SE">Utan Kontrollikoner</label>
-        <label language="ja_JP">コントローラーアイコンなし</label>
-        <label language="ko_KR">컨트롤러 아이콘 없음</label>
-        <label language="zh_CN">无控制器图标</label>
-        <label language="zh_TW">無控制器圖標</label>
+	<variant name="carousel-nocontrollers">
+		<label language="en_US">Carousel without controllers</label>
+		<label language="en_GB">Carousel without controllers</label>
+		<label language="bs_BA">Vrteška bez gamepada</label>
+		<label language="ca_ES">Carrusel sense comandaments</label>
+		<label language="de_DE">Karussell ohne Controller</label>
+		<label language="es_ES">Carrusel sin mandos</label>
+		<label language="fr_FR">Carrousel sans manettes</label>
+		<label language="hr_HR">Vrteška bez gamepada</label>
+		<label language="it_IT">Carosello senza controller</label>
+		<label language="nl_NL">Carrousel zonder controllers</label>
+		<label language="pl_PL">Karuzela bez padów</label>
+		<label language="pt_BR">Carrossel sem controles</label>
+		<label language="pt_PT">Carrossel sem comandos</label>
+		<label language="ro_RO">Carusel fără manete</label>
+		<label language="ru_RU">Карусель без геймпадов</label>
+		<label language="sr_RS">Вртешка без гејмпада</label>
+		<label language="sv_SE">Karusell utan handkontroller</label>
+		<label language="ja_JP">カルーセル コントローラーなし</label>
+		<label language="ko_KR">회전식 컨트롤러 없음</label>
+		<label language="zh_CN">轮播无手柄</label>
+		<label language="zh_TW">輪播無手把</label>
 		<selectable>true</selectable>
 	</variant>
-	<variant name="gamelist-carousel-noclock">
-		<label language="en_US">Without Clock</label>
-		<label language="en_GB">Without Clock</label>
-		<label language="bs_BA">Bez Sata</label>
-        <label language="ca_ES">Sense Rellotge</label>
-        <label language="de_DE">Ohne Uhr</label>
-        <label language="es_ES">Sin Reloj</label>
-        <label language="fr_FR">Sans Horloge</label>
-		<label language="hr_HR">Bez Sata</label>
-        <label language="it_IT">Senza Orologio</label>
-        <label language="nl_NL">Zonder Klok</label>
-        <label language="pl_PL">Bez Zegara</label>
-        <label language="pt_BR">Sem Relógio</label>
-		<label language="pt_PT">Sem Relógio</label>
-        <label language="ro_RO">Bizo o Ćaso</label>
-        <label language="ru_RU">Без Часов</label>
-		<label language="sr_RS">Без Сата</label>
-        <label language="sv_SE">Utan Klocka</label>
-        <label language="ja_JP">時計なし</label>
-        <label language="ko_KR">시계 없이</label>
-        <label language="zh_CN">无时钟</label>
-        <label language="zh_TW">無時鐘</label>
+	<variant name="carousel-noclock">
+		<label language="en_US">Carousel without clock</label>
+		<label language="en_GB">Carousel without clock</label>
+		<label language="bs_BA">Vrteška bez sata</label>
+		<label language="ca_ES">Carrusel sense rellotge</label>
+		<label language="de_DE">Karussell ohne Uhr</label>
+		<label language="es_ES">Carrusel sin reloj</label>
+		<label language="fr_FR">Carrousel sans horloge</label>
+		<label language="hr_HR">Vrteška bez sata</label>
+		<label language="it_IT">Carosello senza orologio</label>
+		<label language="nl_NL">Carrousel zonder klok</label>
+		<label language="pl_PL">Karuzela bez zegara</label>
+		<label language="pt_BR">Carrossel sem relógio</label>
+		<label language="pt_PT">Carrossel sem relógio</label>
+		<label language="ro_RO">Carusel fără ceas</label>
+		<label language="ru_RU">Карусель без часов</label>
+		<label language="sr_RS">Вртешка без сата</label>
+		<label language="sv_SE">Karusell utan klocka</label>
+		<label language="ja_JP">カルーセル 時計なし</label>
+		<label language="ko_KR">회전식 시계 없음</label>
+		<label language="zh_CN">轮播无时钟</label>
+		<label language="zh_TW">輪播無時鐘</label>
 		<selectable>true</selectable>
 	</variant>
-	<variant name="gamelist-carousel-neither">
-		<label language="en_US">Without Either</label>
-		<label language="en_GB">Without Either</label>
-		<label language="bs_BA">Bez Ijednog Od Njih</label>
-        <label language="ca_ES">Sense Cap Dels Dos</label>
-        <label language="de_DE">Ohne Beides</label>
-        <label language="es_ES">Sin Ninguno</label>
-        <label language="fr_FR">Sans L'un Ni L'autre</label>
-		<label language="hr_HR">Bez Ijednog Od Njih</label>
-        <label language="it_IT">Senza Nessuno Dei Due</label>
-        <label language="nl_NL">Zonder Beide</label>
-        <label language="pl_PL">Bez Żadnego Z Nich</label>
-        <label language="pt_BR">Sem Nenhum dos Dois</label>
-		<label language="pt_PT">Sem Que Nenhum dos</label>
-        <label language="ro_RO">Bizo Ni Jekh</label>
-        <label language="ru_RU">Без Того И Другого</label>
-		<label language="sr_RS">Без Било Ког</label>
-        <label language="sv_SE">Utan Antingen</label>
-        <label language="ja_JP">どちらもない場合</label>
-        <label language="ko_KR">둘 중 어느 것도 없이</label>
-        <label language="zh_CN">没有任何一个</label>
-        <label language="zh_TW">沒有任何一個</label>
+	<variant name="carousel-notray">
+		<label language="en_US">Carousel without tray</label>
+		<label language="en_GB">Carousel without tray</label>
+		<label language="bs_BA">Vrteška bez trake statusa</label>
+		<label language="ca_ES">Carrusel sense safata d'estat</label>
+		<label language="de_DE">Karussell ohne Statusleiste</label>
+		<label language="es_ES">Carrusel sin bandeja</label>
+		<label language="fr_FR">Carrousel sans barre d'état</label>
+		<label language="hr_HR">Vrteška bez statusa</label>
+		<label language="it_IT">Carosello senza vassoio</label>
+		<label language="nl_NL">Carrousel zonder statusbalk</label>
+		<label language="pl_PL">Karuzela bez paska stanu</label>
+		<label language="pt_BR">Carrossel sem bandeja</label>
+		<label language="pt_PT">Carrossel sem bandeja de estado</label>
+		<label language="ro_RO">Carusel fără bară de stare</label>
+		<label language="ru_RU">Карусель без трея</label>
+		<label language="sr_RS">Вртешка без статуса</label>
+		<label language="sv_SE">Karusell utan statusfält</label>
+		<label language="ja_JP">カルーセル トレイなし</label>
+		<label language="ko_KR">회전식 트레이 없음</label>
+		<label language="zh_CN">轮播无状态栏</label>
+		<label language="zh_TW">輪播無狀態欄</label>
+		<selectable>true</selectable>
+	</variant>
+	<variant name="carousel-nocontrollers-noclock">
+		<label language="en_US">Carousel without controllers &amp; clock</label>
+		<label language="en_GB">Carousel without controllers &amp; clock</label>
+		<label language="bs_BA">Vrteška bez gamepada i sata</label>
+		<label language="ca_ES">Carrusel sense comandaments ni rellotge</label>
+		<label language="de_DE">Karussell ohne Controller &amp; Uhr</label>
+		<label language="es_ES">Carrusel sin mandos ni reloj</label>
+		<label language="fr_FR">Carrousel sans manettes ni horloge</label>
+		<label language="hr_HR">Vrteška bez gamepada i sata</label>
+		<label language="it_IT">Carosello senza controller e orologio</label>
+		<label language="nl_NL">Carrousel zonder controllers &amp; klok</label>
+		<label language="pl_PL">Karuzela bez padów i zegara</label>
+		<label language="pt_BR">Carrossel sem controles e relógio</label>
+		<label language="pt_PT">Carrossel sem comandos e relógio</label>
+		<label language="ro_RO">Carusel fără manete și ceas</label>
+		<label language="ru_RU">Карусель без геймпадов и часов</label>
+		<label language="sr_RS">Вртешка без гејмпада и сата</label>
+		<label language="sv_SE">Karusell utan handkontroller &amp; klocka</label>
+		<label language="ja_JP">カルーセル コントローラー・時計なし</label>
+		<label language="ko_KR">회전식 컨트롤러 및 시계 없음</label>
+		<label language="zh_CN">轮播无手柄与时钟</label>
+		<label language="zh_TW">輪播無手把與時鐘</label>
+		<selectable>true</selectable>
+	</variant>
+	<variant name="carousel-nocontrollers-notray">
+		<label language="en_US">Carousel without controllers &amp; tray</label>
+		<label language="en_GB">Carousel without controllers &amp; tray</label>
+		<label language="bs_BA">Vrteška bez gamepada i trake</label>
+		<label language="ca_ES">Carrusel sense comandaments ni safata</label>
+		<label language="de_DE">Karussell ohne Controller &amp; Leiste</label>
+		<label language="es_ES">Carrusel sin mandos ni bandeja</label>
+		<label language="fr_FR">Carrousel sans manettes ni barre d'état</label>
+		<label language="hr_HR">Vrteška bez gamepada i statusa</label>
+		<label language="it_IT">Carosello senza controller e vassoio</label>
+		<label language="nl_NL">Carrousel zonder controllers &amp; statusbalk</label>
+		<label language="pl_PL">Karuzela bez padów i paska stanu</label>
+		<label language="pt_BR">Carrossel sem controles e bandeja</label>
+		<label language="pt_PT">Carrossel sem comandos e bandeja</label>
+		<label language="ro_RO">Carusel fără manete și stare</label>
+		<label language="ru_RU">Карусель без геймпадов и трея</label>
+		<label language="sr_RS">Вртешка без гејмпада и статуса</label>
+		<label language="sv_SE">Karusell utan handkontroller &amp; statusfält</label>
+		<label language="ja_JP">カルーセル コントローラー・トレイなし</label>
+		<label language="ko_KR">회전식 컨트롤러 및 트레이 없음</label>
+		<label language="zh_CN">轮播无手柄与状态栏</label>
+		<label language="zh_TW">輪播無手把與狀態欄</label>
 		<selectable>true</selectable>
 	</variant>
 	<variant name="grid">
-		<label>Grid</label>
+		<label language="en_US">Grid</label>
+		<label language="en_GB">Grid</label>
+		<label language="bs_BA">Mreža</label>
+		<label language="ca_ES">Quadrícula</label>
+		<label language="de_DE">Raster</label>
+		<label language="es_ES">Cuadrícula</label>
+		<label language="fr_FR">Grille</label>
+		<label language="hr_HR">Mreža</label>
+		<label language="it_IT">Griglia</label>
+		<label language="nl_NL">Raster</label>
+		<label language="pl_PL">Siatka</label>
+		<label language="pt_BR">Grade</label>
+		<label language="pt_PT">Grelha</label>
+		<label language="ro_RO">Grilă</label>
+		<label language="ru_RU">Сетка</label>
+		<label language="sr_RS">Мрежа</label>
+		<label language="sv_SE">Rutnät</label>
+		<label language="ja_JP">グリッド</label>
+		<label language="ko_KR">그리드</label>
+		<label language="zh_CN">网格</label>
+		<label language="zh_TW">網格</label>
 		<selectable>true</selectable>
 	</variant>
-	<variant name="grid-neither">
-		<label>Grid Without Either</label>
+	<variant name="grid-nocontrollers">
+		<label language="en_US">Grid without controllers</label>
+		<label language="en_GB">Grid without controllers</label>
+		<label language="bs_BA">Mreža bez gamepada</label>
+		<label language="ca_ES">Quadrícula sense comandaments</label>
+		<label language="de_DE">Raster ohne Controller</label>
+		<label language="es_ES">Cuadrícula sin mandos</label>
+		<label language="fr_FR">Grille sans manettes</label>
+		<label language="hr_HR">Mreža bez gamepada</label>
+		<label language="it_IT">Griglia senza controller</label>
+		<label language="nl_NL">Raster zonder controllers</label>
+		<label language="pl_PL">Siatka bez padów</label>
+		<label language="pt_BR">Grade sem controles</label>
+		<label language="pt_PT">Grelha sem comandos</label>
+		<label language="ro_RO">Grilă fără manete</label>
+		<label language="ru_RU">Сетка без геймпадов</label>
+		<label language="sr_RS">Мрежа без гејмпада</label>
+		<label language="sv_SE">Rutnät utan handkontroller</label>
+		<label language="ja_JP">グリッド コントローラーなし</label>
+		<label language="ko_KR">그리드 컨트롤러 없음</label>
+		<label language="zh_CN">网格无手柄</label>
+		<label language="zh_TW">網格無手把</label>
+		<selectable>true</selectable>
+	</variant>
+	<variant name="grid-noclock">
+		<label language="en_US">Grid without clock</label>
+		<label language="en_GB">Grid without clock</label>
+		<label language="bs_BA">Mreža bez sata</label>
+		<label language="ca_ES">Quadrícula sense rellotge</label>
+		<label language="de_DE">Raster ohne Uhr</label>
+		<label language="es_ES">Cuadrícula sin reloj</label>
+		<label language="fr_FR">Grille sans horloge</label>
+		<label language="hr_HR">Mreža bez sata</label>
+		<label language="it_IT">Griglia senza orologio</label>
+		<label language="nl_NL">Raster zonder klok</label>
+		<label language="pl_PL">Siatka bez zegara</label>
+		<label language="pt_BR">Grade sem relógio</label>
+		<label language="pt_PT">Grelha sem relógio</label>
+		<label language="ro_RO">Grilă fără ceas</label>
+		<label language="ru_RU">Сетка без часов</label>
+		<label language="sr_RS">Мрежа без сата</label>
+		<label language="sv_SE">Rutnät utan klocka</label>
+		<label language="ja_JP">グリッド 時計なし</label>
+		<label language="ko_KR">그리드 시계 없음</label>
+		<label language="zh_CN">网格无时钟</label>
+		<label language="zh_TW">網格無時鐘</label>
+		<selectable>true</selectable>
+	</variant>
+	<variant name="grid-notray">
+		<label language="en_US">Grid without tray</label>
+		<label language="en_GB">Grid without tray</label>
+		<label language="bs_BA">Mreža bez trake statusa</label>
+		<label language="ca_ES">Quadrícula sense safata d'estat</label>
+		<label language="de_DE">Raster ohne Statusleiste</label>
+		<label language="es_ES">Cuadrícula sin bandeja</label>
+		<label language="fr_FR">Grille sans barre d'état</label>
+		<label language="hr_HR">Mreža bez statusa</label>
+		<label language="it_IT">Griglia senza vassoio</label>
+		<label language="nl_NL">Raster zonder statusbalk</label>
+		<label language="pl_PL">Siatka bez paska stanu</label>
+		<label language="pt_BR">Grade sem bandeja</label>
+		<label language="pt_PT">Grelha sem bandeja de estado</label>
+		<label language="ro_RO">Grilă fără bară de stare</label>
+		<label language="ru_RU">Сетка без трея</label>
+		<label language="sr_RS">Мрежа без статуса</label>
+		<label language="sv_SE">Rutnät utan statusfält</label>
+		<label language="ja_JP">グリッド トレイなし</label>
+		<label language="ko_KR">그리드 트레이 없음</label>
+		<label language="zh_CN">网格无状态栏</label>
+		<label language="zh_TW">網格無狀態欄</label>
+		<selectable>true</selectable>
+	</variant>
+	<variant name="grid-nocontrollers-noclock">
+		<label language="en_US">Grid without controllers &amp; clock</label>
+		<label language="en_GB">Grid without controllers &amp; clock</label>
+		<label language="bs_BA">Mreža bez gamepada i sata</label>
+		<label language="ca_ES">Quadrícula sense comandaments ni rellotge</label>
+		<label language="de_DE">Raster ohne Controller &amp; Uhr</label>
+		<label language="es_ES">Cuadrícula sin mandos ni reloj</label>
+		<label language="fr_FR">Grille sans manettes ni horloge</label>
+		<label language="hr_HR">Mreža bez gamepada i sata</label>
+		<label language="it_IT">Griglia senza controller e orologio</label>
+		<label language="nl_NL">Raster zonder controllers &amp; klok</label>
+		<label language="pl_PL">Siatka bez padów i zegara</label>
+		<label language="pt_BR">Grade sem controles e relógio</label>
+		<label language="pt_PT">Grelha sem comandos e relógio</label>
+		<label language="ro_RO">Grilă fără manete și ceas</label>
+		<label language="ru_RU">Сетка без геймпадов и часов</label>
+		<label language="sr_RS">Мрежа без гејмпада и сата</label>
+		<label language="sv_SE">Rutnät utan handkontroller &amp; klocka</label>
+		<label language="ja_JP">グリッド コントローラー・時計なし</label>
+		<label language="ko_KR">그리드 컨트롤러 및 시계 없음</label>
+		<label language="zh_CN">网格无手柄与时钟</label>
+		<label language="zh_TW">網格無手把與時鐘</label>
+		<selectable>true</selectable>
+	</variant>
+	<variant name="grid-nocontrollers-notray">
+		<label language="en_US">Grid without controllers &amp; tray</label>
+		<label language="en_GB">Grid without controllers &amp; tray</label>
+		<label language="bs_BA">Mreža bez gamepada i trake</label>
+		<label language="ca_ES">Quadrícula sense comandaments ni safata</label>
+		<label language="de_DE">Raster ohne Controller &amp; Leiste</label>
+		<label language="es_ES">Cuadrícula sin mandos ni bandeja</label>
+		<label language="fr_FR">Grille sans manettes ni barre d'état</label>
+		<label language="hr_HR">Mreža bez gamepada i statusa</label>
+		<label language="it_IT">Griglia senza controller e vassoio</label>
+		<label language="nl_NL">Raster zonder controllers &amp; statusbalk</label>
+		<label language="pl_PL">Siatka bez padów i paska stanu</label>
+		<label language="pt_BR">Grade sem controles e bandeja</label>
+		<label language="pt_PT">Grelha sem comandos e bandeja</label>
+		<label language="ro_RO">Grilă fără manete și stare</label>
+		<label language="ru_RU">Сетка без геймпадов и трея</label>
+		<label language="sr_RS">Мрежа без гејмпада и статуса</label>
+		<label language="sv_SE">Rutnät utan handkontroller &amp; statusfält</label>
+		<label language="ja_JP">グリッド コントローラー・トレイなし</label>
+		<label language="ko_KR">그리드 컨트롤러 및 트레이 없음</label>
+		<label language="zh_CN">网格无手柄与状态栏</label>
+		<label language="zh_TW">網格無手把與狀態欄</label>
 		<selectable>true</selectable>
 	</variant>
 
-	<!--///	Esquemas de Cores ///-->
-    <colorScheme name="light">
-        <label language="en_US">Light</label>
+	<!--/// Esquemas de Cores ///-->
+	<colorScheme name="light">
+		<label language="en_US">Light</label>
 		<label language="en_GB">Light</label>
-		<label language="bs_BA">Naravno</label>
-        <label language="ca_ES">Clar</label>
-        <label language="de_DE">Hell</label>
-        <label language="es_ES">Claro</label>
-        <label language="fr_FR">Clair</label>
-		<label language="hr_HR">Naravno</label>
-        <label language="it_IT">Chiaro</label>
-        <label language="nl_NL">Licht</label>
-        <label language="pl_PL">Jasna</label>
-        <label language="pt_BR">Claro</label>
+		<label language="bs_BA">Svijetlo</label>
+		<label language="ca_ES">Clar</label>
+		<label language="de_DE">Hell</label>
+		<label language="es_ES">Claro</label>
+		<label language="fr_FR">Clair</label>
+		<label language="hr_HR">Svijetlo</label>
+		<label language="it_IT">Chiaro</label>
+		<label language="nl_NL">Licht</label>
+		<label language="pl_PL">Jasny</label>
+		<label language="pt_BR">Claro</label>
 		<label language="pt_PT">Claro</label>
-        <label language="ro_RO">Luminoasă</label>
-        <label language="ru_RU">Светлая</label>
-		<label language="sr_RS">Наравно</label>
-        <label language="sv_SE">Ljust</label>
-        <label language="ja_JP">ライト</label>
-        <label language="ko_KR">라이트</label>
-        <label language="zh_CN">明亮</label>
-        <label language="zh_TW">明亮</label>
-    </colorScheme>
+		<label language="ro_RO">Luminos</label>
+		<label language="ru_RU">Светлая</label>
+		<label language="sr_RS">Светло</label>
+		<label language="sv_SE">Ljust</label>
+		<label language="ja_JP">ライト</label>
+		<label language="ko_KR">라이트</label>
+		<label language="zh_CN">明亮</label>
+		<label language="zh_TW">明亮</label>
+	</colorScheme>
 
-    <colorScheme name="dark">
-        <label language="en_US">Dark</label>
+	<colorScheme name="dark">
+		<label language="en_US">Dark</label>
 		<label language="en_GB">Dark</label>
 		<label language="bs_BA">Tamno</label>
-        <label language="ca_ES">Fosc</label>
-        <label language="de_DE">Dunkel</label>
-        <label language="es_ES">Oscuro</label>
-        <label language="fr_FR">Foncé</label>
+		<label language="ca_ES">Fosc</label>
+		<label language="de_DE">Dunkel</label>
+		<label language="es_ES">Oscuro</label>
+		<label language="fr_FR">Foncé</label>
 		<label language="hr_HR">Tamno</label>
-        <label language="it_IT">Scuro</label>
-        <label language="nl_NL">Donker</label>
-        <label language="pl_PL">Ciemna</label>
-        <label language="pt_BR">Escuro</label>
+		<label language="it_IT">Scuro</label>
+		<label language="nl_NL">Donker</label>
+		<label language="pl_PL">Ciemny</label>
+		<label language="pt_BR">Escuro</label>
 		<label language="pt_PT">Escuro</label>
-        <label language="ro_RO">Întunecată</label>
-        <label language="ru_RU">Тёмная</label>
+		<label language="ro_RO">Întunecat</label>
+		<label language="ru_RU">Тёмная</label>
 		<label language="sr_RS">Тамно</label>
-        <label language="sv_SE">Mörkt</label>
-        <label language="ja_JP">ダーク</label>
-        <label language="ko_KR">다크</label>
-        <label language="zh_CN">暗黑</label>
-        <label language="zh_TW">暗黑</label>
-    </colorScheme>
+		<label language="sv_SE">Mörkt</label>
+		<label language="ja_JP">ダーク</label>
+		<label language="ko_KR">다크</label>
+		<label language="zh_CN">暗黑</label>
+		<label language="zh_TW">暗黑</label>
+	</colorScheme>
 
-    <colorScheme name="blue">
-        <label language="en_US">Blue</label>
+	<colorScheme name="blue">
+		<label language="en_US">Blue</label>
 		<label language="en_GB">Blue</label>
 		<label language="bs_BA">Plava</label>
-        <label language="ca_ES">Blau</label>
-        <label language="de_DE">Blau</label>
-        <label language="es_ES">Azul</label>
-        <label language="fr_FR">Bleu</label>
+		<label language="ca_ES">Blau</label>
+		<label language="de_DE">Blau</label>
+		<label language="es_ES">Azul</label>
+		<label language="fr_FR">Bleu</label>
 		<label language="hr_HR">Plava</label>
-        <label language="it_IT">Blu</label>
-        <label language="nl_NL">Blauw</label>
-        <label language="pl_PL">Niebieski</label>
-        <label language="pt_BR">Azul</label>
+		<label language="it_IT">Blu</label>
+		<label language="nl_NL">Blauw</label>
+		<label language="pl_PL">Niebieski</label>
+		<label language="pt_BR">Azul</label>
 		<label language="pt_PT">Azul</label>
-        <label language="ro_RO">Albastru</label>
-        <label language="ru_RU">Синий</label>
+		<label language="ro_RO">Albastru</label>
+		<label language="ru_RU">Синий</label>
 		<label language="sr_RS">Плава</label>
-        <label language="sv_SE">Blå</label>
-        <label language="ja_JP">青い</label>
-        <label language="ko_KR">파란색</label>
-        <label language="zh_CN">蓝色的</label>
-        <label language="zh_TW">藍色的</label>
-    </colorScheme>
-	
-    <colorScheme name="green">
-        <label language="en_US">Green</label>
+		<label language="sv_SE">Blå</label>
+		<label language="ja_JP">青い</label>
+		<label language="ko_KR">파란색</label>
+		<label language="zh_CN">蓝色</label>
+		<label language="zh_TW">藍色</label>
+	</colorScheme>
+
+	<colorScheme name="green">
+		<label language="en_US">Green</label>
 		<label language="en_GB">Green</label>
 		<label language="bs_BA">Zelena</label>
-        <label language="ca_ES">Verd</label>
-        <label language="de_DE">Grün</label>
-        <label language="es_ES">Verde</label>
-        <label language="fr_FR">Vert</label>
+		<label language="ca_ES">Verd</label>
+		<label language="de_DE">Grün</label>
+		<label language="es_ES">Verde</label>
+		<label language="fr_FR">Vert</label>
 		<label language="hr_HR">Zelena</label>
-        <label language="it_IT">Verde</label>
-        <label language="nl_NL">Groen</label>
-        <label language="pl_PL">Zielony</label>
-        <label language="pt_BR">Verde</label>
+		<label language="it_IT">Verde</label>
+		<label language="nl_NL">Groen</label>
+		<label language="pl_PL">Zielony</label>
+		<label language="pt_BR">Verde</label>
 		<label language="pt_PT">Verde</label>
-        <label language="ro_RO">Verde</label>
-        <label language="ru_RU">Зелёный</label>
+		<label language="ro_RO">Verde</label>
+		<label language="ru_RU">Зелёный</label>
 		<label language="sr_RS">Зелена</label>
-        <label language="sv_SE">Grön</label>
-        <label language="ja_JP">グリーン</label>
-        <label language="ko_KR">그린</label>
-        <label language="zh_CN">绿色</label>
-        <label language="zh_TW">綠色</label>
-    </colorScheme>
+		<label language="sv_SE">Grön</label>
+		<label language="ja_JP">グリーン</label>
+		<label language="ko_KR">그린</label>
+		<label language="zh_CN">绿色</label>
+		<label language="zh_TW">綠色</label>
+	</colorScheme>
 
-    <colorScheme name="teal">
-        <label language="en_US">Teal</label>
+	<colorScheme name="teal">
+		<label language="en_US">Teal</label>
 		<label language="en_GB">Teal</label>
 		<label language="bs_BA">Tirkizna</label>
-        <label language="ca_ES">Turquesa</label>
-        <label language="de_DE">Türkis</label>
-        <label language="es_ES">Verde Azulado</label>
-        <label language="fr_FR">Sarcelle</label>
+		<label language="ca_ES">Turquesa</label>
+		<label language="de_DE">Türkis</label>
+		<label language="es_ES">Verde azulado</label>
+		<label language="fr_FR">Sarcelle</label>
 		<label language="hr_HR">Tirkizna</label>
-        <label language="it_IT">Verde Petrolio</label>
-        <label language="nl_NL">Turkoois</label>
-        <label language="pl_PL">Morski</label>
-        <label language="pt_BR">Azul Petróleo</label>
+		<label language="it_IT">Verde Petrolio</label>
+		<label language="nl_NL">Turkoois</label>
+		<label language="pl_PL">Morski</label>
+		<label language="pt_BR">Azul Petróleo</label>
 		<label language="pt_PT">Azul Petróleo</label>
-        <label language="ro_RO">Turcoaz</label>
+		<label language="ro_RO">Turcoaz</label>
 		<label language="ru_RU">Бирюзовый</label>
 		<label language="sr_RS">Тиркизна</label>
-        <label language="sv_SE">Teal</label>
-        <label language="ja_JP">ティール</label>
-        <label language="ko_KR">틸</label>
-        <label language="zh_CN">蓝绿色</label>
-        <label language="zh_TW">藍綠色</label>
-    </colorScheme>
+		<label language="sv_SE">Teal</label>
+		<label language="ja_JP">ティール</label>
+		<label language="ko_KR">틸</label>
+		<label language="zh_CN">蓝绿色</label>
+		<label language="zh_TW">藍綠色</label>
+	</colorScheme>
 
 </themeCapabilities>
